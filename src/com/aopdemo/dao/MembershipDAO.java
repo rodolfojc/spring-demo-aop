@@ -5,10 +5,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class MembershipDAO {
 
-	public void addOtherAccount() {
+	public boolean addOtherAccount() {
 		
 		System.out.println(getClass()+ ": DOING MY DB WORK: MEMBERSHIP");
 		
+		return false;
 	}
 	
 }

@@ -11,7 +11,7 @@ public class MyDemoLogginAspect {
 	//RELATED ADVICES FOR LOGGING
 	
 	//@BEFORE
-	@Before("execution(public void add*())")
+	@Before("execution(* add*())")
 	public void beforeAddAccountAdvice() {
 		
 		System.out.println("Executing @Before advice on addAccount()");
