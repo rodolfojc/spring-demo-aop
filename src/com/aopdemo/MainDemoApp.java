@@ -19,7 +19,8 @@ public class MainDemoApp {
 		MembershipDAO theMemberDAO = context.getBean("membershipDAO", MembershipDAO.class);
 		
 		//CALL METHODS
-		theAccountDAO.addAccount();
+		Account myAccount = new Account();
+		theAccountDAO.addAccount(myAccount);
 		theMemberDAO.addOtherAccount();
 		
 		//CLOSE CONTEXT
