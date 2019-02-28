@@ -20,7 +20,7 @@ public class MainDemoApp {
 		
 		//CALL METHODS
 		Account myAccount = new Account();
-		theAccountDAO.addAccount(myAccount);
+		theAccountDAO.addAccount(myAccount, true);
 		theMemberDAO.addOtherAccount();
 		
 		//CLOSE CONTEXT
