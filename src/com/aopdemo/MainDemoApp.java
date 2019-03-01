@@ -21,7 +21,9 @@ public class MainDemoApp {
 		//CALL METHODS
 		Account myAccount = new Account();
 		theAccountDAO.addAccount(myAccount, true);
+		theAccountDAO.doWork();
 		theMemberDAO.addOtherAccount();
+		theMemberDAO.goToSleep();
 		
 		//CLOSE CONTEXT
 		context.close();
